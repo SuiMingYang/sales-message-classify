@@ -1,0 +1,6 @@
+*.pyc
+build
+dist
+tablestore.egg-info
+tests/*.log
+.vscode
