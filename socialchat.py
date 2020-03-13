@@ -13,7 +13,7 @@ from pandas.tseries.offsets import Day
 from orm import mysql_ORM
 class socailchat:
     def __init__(self):
-        self.conn=pymysql.connect('rm-bp171b759ha99x5wfso.mysql.rds.aliyuncs.com',port=3306,user='root',passwd='HPGQEhutFBUCi8ZE8JYgWDwZVhAHXWJx',db='businessdata')
+        self.conn=pymysql.connect('')
 
     def from_channel_get_group(self):
         """
@@ -286,8 +286,8 @@ if __name__ == "__main__":
     #入库
     #清洗realid
     #[\d-]+[,\d@]+[a-z]+[,]
-    mysql_obj1=mysql_ORM("rm-bp171b759ha99x5wfso.mysql.rds.aliyuncs.com","root","HPGQEhutFBUCi8ZE8JYgWDwZVhAHXWJx",3306,"businessdata")
-    mysql_obj2=mysql_ORM("127.0.0.1","root","smy123456",3306,"BusinessData")
+    mysql_obj1=mysql_ORM("")
+    mysql_obj2=mysql_ORM("")
     mysql_conn1=mysql_obj1.connect_fc()
     mysql_conn2=mysql_obj2.connect_fc()
     

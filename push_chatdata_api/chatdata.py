@@ -16,7 +16,7 @@ def push_chatdata():
         info_list=json.loads(info_list.replace(' ',''))
         try:
             df = pd.DataFrame(info_list)
-            df.to_sql('chatdata',create_engine("mysql+pymysql://root:HPGQEhutFBUCi8ZE8JYgWDwZVhAHXWJx@rm-bp171b759ha99x5wfso.mysql.rds.aliyuncs.com/businessdata?charset=utf8"),if_exists="append",index=True)
+            df.to_sql('chatdata',create_engine(""),if_exists="append",index=True)
             #df.to_sql('chatdata',create_engine("mysql+pymysql://root:smy123456@127.0.0.1/businessdata?charset=utf8"),if_exists="append")
             return "success"#json.dumps({'status':'success'})
         except Exception as e:
